@@ -1,10 +1,21 @@
 #include <stdio.h>
 
 int main(){
+    char string[50];
+    char newArray[50];
+    newArray[49] = '\0';
+    int i=0;
+    printf("Enter the sentence: ");
+    gets(string);
+    while(string[i] != '\0') {
+        //printf("ASCII Value of %c=%d\n", string[i],string[i]);
+        printf("%d ",string[i]);
+        //newArray[i] = (int)string[i];
+        i++;
+    }
 
-    char a = 'A';
-    printf("The original char is %c.", a);
-    char b = a + 3;
-    printf("The modified char is %c.", b);
+    //puts(newArray);
+    //getch();
     return 0;
+
 }
