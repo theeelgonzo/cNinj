@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 #define IN 1    /*inside a word*/
-#define out 0   /*outisde a word*/
+#define OUT 0   /*outisde a word*/
 
 /* count lines, words, and characters in input*/
 
@@ -16,7 +16,7 @@ int main()
         if (c == '\n')
             ++nl;
         if (c == ' ' || c == '\n' || c == '\t')
-            state == OUT;
+            state = OUT;
         else if (state == OUT) {
             state = IN;
             ++nw;
