@@ -7,7 +7,7 @@ int main(){
     i=0;
     while(i<26){
         c = i + 65;
-        printf("%s", &c);
-        ++i;}
+        printf("%s\n", &c);
+        i++;}
     return 0;
 }
