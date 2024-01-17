@@ -9,8 +9,10 @@ int main(){
     scanf("%d", &b);
     if( a>b )
         printf("%d is greater than %d\n", a,b);
-    else
+    else if (b>a)
         printf("%d is greater than %d\n", b,a);
+    else
+        printf("%d is equal to %d", a, b);
 
     return 0;
 }
